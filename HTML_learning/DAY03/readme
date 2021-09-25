@@ -101,3 +101,10 @@ label标签：绑定表单元素，点击label内文本时，光标自动对应�
 
 by wyx    2021.9.23
 
+9.25
+<a href="#id1"></a>
+<h1 id="id1"> 跳转
+
+<input type="radio" name="xx" id="id1" />
+<label for="id1">xx</label>
+选中xx即选择按钮选项
