@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS语法规范</title>
+    <!-- style即CSS语法设置内容 2021.9.25  by wyx -->
+    <style>
+        /* style内注释与html中不同 */
+        /* 标签选择器 */
+        p {
+            color: red;
+            font-size: 12px;
+        }
+        div {
+            color: blue;
+            font-size: 12px;
+        }
+        /* 类选择器，单独选一个或某几个 */
+        .yellow {
+            color: yellow;
+        }
+        .font {
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>man</p>
+    <p>man</p>
+    <p>man</p>
+    <div>woman</div>
+    <!-- 将特定行的字体颜色设置为yellow -->
+    <div class="yellow font">woman</div> 
+    <div>woman</div>
+    <h6 class="yellow">黄色字体</h6>
+</body>
+</html>
