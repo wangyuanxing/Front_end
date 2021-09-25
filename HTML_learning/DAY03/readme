@@ -1,1 +1,103 @@
+★表格     嵌套关系，展示数据作用
+ <table>
+    <tr>
+       <td>  </td>
+       <td>  </td>
+       .......
+    </tr>
+    <tr>
+        <td></td>
+        .......
+    </tr>
+  </table>
+  <tr></tr>为行，<td></td>为每行中的单元格 table data
+
+表头单元格标签（table head)
+<th></th>
+与td不同的是，表头单元格标签可以居中和加粗
+
+表格属性，一般用CSS设置 写到表格中去 <table align="center"
+对齐方式：align   left center right，
+表格边框：border  是否有边框，默认没有写“”，有为1
+内容与单元格边沿距离：cellpadding，默认1像素
+两单元格之间的空白：cellspacing,默认2像素，可设置为0
+表格宽度：width, 高度:height
+
+表格结构标签，thead：表格头部区域 tbody：表格主体区域
+
+合并单元格：
+跨行合并： rowspan="合并单元格个数" row   行, 上侧单元格为目标单元格
+跨列合并： colspan="合并单元格个数" column列，左侧单元格为目标单元格
+
+
+★列表标签  表格展示数据，列表用于布局
+整齐、整洁、有序，自由方便。
+
+无序列表  <li>相当于一个容器，可以放任意一个标签 unordered list
+<ul>
+  <li>  </li>
+  <li>  </li>
+  <li>  </li>
+</ul>
+
+有序列表 
+<ol>
+  <li>  </li>
+  <li>  </li>
+  <li>  </li>
+</ol>
+
+自定义列表 小标题+围绕说明用自定义列表 dl dt dd
+<dl>
+  <dt>小标题1</dt>
+    <dd>解释1<dd>
+    <dd>解释2<dd>
+    <dd>解释3<dd>
+</dl>
+
+表单标签 收集用户信息。
+3部分：表单域、表单控件（表单元素）、提示信息
+表单域（包含表单元素的区域）将表单元素交给服务器（后台）
+<form>  action="url地址"：指定接受并处理表单数据的服务器程序的url地址
+        method="提交方式":get/post，
+        name="表单名称"：有许多表单域，取name用于区分表单域
+</form>
+表单元素，
+☆input 输入标签
+1.<input type="属性值" />输入表单元素 
+属性值如text(文本)，
+password（密码*），
+radio（单选按钮）必须有相同姓名，
+checkbox(多选)，
+submit(提交)
+reset(重置)
+file(上传文件)
+2.name和value主要给后台人员方便看
+3.checked,设置页面打开 即选中，针对单选或多选按钮
+4.maxlength，最大字符数  
+
+label标签：绑定表单元素，点击label内文本时，光标自动对应表单元素上，增加用户体验
+<label for="id属性">xx</label>
+<input type="radio" name="xx" id="id属性" />
+经常与input标签一起使用
+
+☆select 下拉标签  多个选项需要选择 如选择省份
+<form>
+<select>
+ <option selected="selected">选项1</option>   选项1为默认选项
+ <option>选项2</option>
+ <option>选项3</option>
+ <option>选项4</option>
+</select>
+</form>
+
+☆textarea   要输入多行文本，如留言等，
+<form>
+今日反馈：
+<textarea cols="50" rows="5">一般用CSS设置cols和rows
+ 
+</textarea>
+</form>
+
+by wyx    2021.9.23
 
