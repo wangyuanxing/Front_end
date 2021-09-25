@@ -1,1 +1,2 @@
-
+HTML构造主要天气报道内容
+通过外部样式表<link rel="stylesheet" href="weather.css">接入
