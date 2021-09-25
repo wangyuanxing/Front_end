@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 主要用到了day03所学的表格标签，列表标签，表单标签 -->
+    <h3 align="center">我是谁？</h3>
+    <form>
+    <table align="center" cellspacing="0" width="1000">
+        <tr>
+            <td>性别:</td>
+            <td>
+                <form>
+                    <input type="radio" name="sex" id="man" />
+                    <label for="man">男</label>
+                    <input type="radio" name="sex" id="woman" />
+                    <label for="woman">女</label>
+                </form>
+            </td>
+        </tr>
+        <!-- 此行select，默认第一行为首选，selected="selected" -->
+        <tr>
+            <td>生日：</td>
+            <td> 
+                    <select >
+                        <option selected="selected">请选择年份</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                    </select>
+                    <select>
+                        <option selected="selected">请选择月份</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select>
+                        <option selected="selected">请选择日期</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td>
+                <input type="text" value="江浙沪">
+            </td>
+        </tr>
+        <tr>
+            <td>婚姻状况</td>
+            <td>
+                <!-- checked="checked"默认首选项 -->
+                <input type="radio" name="婚姻" id="hunyin" checked="checked"> <label for="hunyin">未婚</label>
+                <input type="radio" name="婚姻" id="hunyin" > <label for="hunyin">已婚</label>
+                <input type="radio" name="婚姻" id="hunyin" > <label for="hunyin">离异</label>
+            </td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td>
+                <input type="text" value="从未上过学">
+            </td>
+        </tr>
+        <tr>
+            <td>喜欢类型</td>
+            <td>
+                <input type="checkbox" name="爱好" id="hobby1"> <label for="hobby1">游泳</label>
+                <input type="checkbox" name="爱好" id="hobby2"> <label for="hobby2">看书</label>
+                <input type="checkbox" name="爱好" id="hobby3"> <label for="hobby3">美食</label>
+                <input type="checkbox" name="爱好" id="hobby4"> <label for="hobby4">睡觉</label>
+                <input type="checkbox" name="爱好" id="hobby5"> <label for="hobby5">游戏</label>
+                <input type="checkbox" name="爱好" id="hobby6"> <label for="hobby6">篮球</label>
+            </td>
+        </tr>
+        <tr>
+            <td>自我介绍</td>
+            <td>
+                <textarea cols="30" rows="5" value="可以写5行每行30个字">
+                </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="免费注册" />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="radio" id="tiaokuan"/>
+                <label for="tiaokuan">我同意注册条款和会员加入标准</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h4><a href="#">我是会员，立即登录</a></h4>
+            </td>
+        </tr>
+                </tr>
+        <tr>
+            <td></td>
+            <td>
+                <h3 align="left">我承诺！</h3><br />
+                <ul align="left">
+                    <li>年满18，如喽啰</li>
+                    <li>抱着严肃的态度</li>
+                    <li>热爱生活，心态良好</li>
+                </ul>
+            </td>
+        </tr>
+    </table> 
+</form>
+</body>
+</html>
