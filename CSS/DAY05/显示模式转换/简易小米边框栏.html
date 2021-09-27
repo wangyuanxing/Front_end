@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XiaoMi_边框栏</title>
+    <!-- 2021.9.27 by wyx -->
+    <!-- 核心思路：链接a转换为块级元素，链接可以独占一行，且有高度和宽度；经过a时，链接设置背景颜色 -->
+    <!-- 文字垂直居中，行高=高 line-height=height -->
+    <style>
+        a {
+            display: block;
+            width: 270px;
+            height: 50px;
+            background-color: rgb(97, 96, 96);
+            font-size: 14px;
+            text-decoration: none;
+            text-indent: 2em;
+            color: white;
+            /* 文字垂直居中 */
+            line-height: 50px;
+            
+        }
+        a:hover {
+            background-color:orangered;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#">手机 电话卡</a>
+    <a href="#">电视 盒子</a>
+    <a href="#">笔记本 平板</a>
+    <a href="#">出行 穿戴</a>
+    <a href="#">智能 路由器</a>
+    <a href="#">健康 儿童</a>
+    <a href="#">耳机 音响</a>
+    <a href="#">其他</a>
+</body>
+
+</html>
