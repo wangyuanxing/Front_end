@@ -1,1 +1,16 @@
+★Emmet语法
+使用缩写提高html/css的编写速度
+1.快速生成html结构语法
+标签：输入div直接按tab即可；
+多个相同标签，div*3
+父子级标签，>,ul>li
+同级标签，div+p
+类名或id,.demo或#demo 按tab键
+生成div类名有顺序，自增符号$
+2.CSS标签快速写。
+如 text-align:center  tac按tab即可
+w100即 width：100px
+3.格式化代码（快速开发）
+shift+alt+f
+格式直接变好，自动保存页面格式化代码
 
