@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 2021.9.27 by wyx -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器test</title>
+    <style>
+        /*1.修改1中链接文字颜色为红色  */
+        .nav ul li a {
+            color: red;
+        }
+
+        /* 2.改猪头为粉色 */
+        .pig>a {
+            color: pink;
+        }
+
+        /* 3.1 将熊大熊二改为绿色 */
+        div,
+        p {
+            color: green;
+        }
+
+        /* 3.2 将光头强改为粉色，小猪佩奇一家改为粉色 */
+        span,
+        .piggy li {
+            color: pink;
+        }
+
+        /* 4.1 伪类选择器，链接a */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: orange;
+
+        }
+
+        a:hover {
+            color: skyblue;
+        }
+
+        a:active {
+            color: green;
+        }
+        /* 4.2 focus伪类选择器 */
+        input:focus{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 111111111 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">baidu</a></li>
+            <li><a href="#">baidu</a></li>
+        </ul>
+    </div>
+    <!-- 2222222222 -->
+    <div class="pig">
+        <a href="#">猪头</a>
+        <ul>
+            <li><a href="#">猪脑</a></li>
+            <li><a href="#">猪尾巴</a></li>
+        </ul>
+    </div>
+    <!-- 33333333333 -->
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>guangtouqiang</span>
+    <ul class="piggy">
+        <li>piggy</li>
+        <li>piggy mom</li>
+        <li>piggy dad</li>
+    </ul>
+    <!-- 444444444444 -->
+    <a href="http://www.baidu.com" target="_blank">1111111</a>
+    <a href="#" target="_blank">2222222</a>
+    <a href="#" target="_blank">3333333</a>
+    <a href="#" target="_blank">4444444</a>
+    <input type="text" value="1234567">
+
+</body>
+
+</html>
