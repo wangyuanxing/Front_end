@@ -1,1 +1,25 @@
+2021.10.09 by WYX
+1.圆角边框
+border-radius:10px/50%（宽度的一半）
+边框相切的圆半径
+a,圆，则半径为其的一半
+b,圆角矩形，则设置为矩形高度的一半
+c,分开写：
+左上角: border-top-left-radius: 10px
+右上角: border-top-right-radius: 20px
+左下角: border-bottom-right-radius: 20px
+右下角: border-bottom-right-radius: 20px
+
+2.盒子阴影 box-shadow
+触碰以后出现阴影效果
+box-shadow:h-shadow v-shadow前两个必须写 
+盒子阴影不影响排列。
+原先无影子，鼠标经过有影子
+div:hover{
+    box-shadow:10px 10px 10px -4px rgba(0,0,0,.3)
+}
+
+3.文字阴影 text-shadow
+text-shadow:h-shadow v-shadow必写 
+
 
