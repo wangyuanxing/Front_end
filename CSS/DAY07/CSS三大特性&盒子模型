@@ -1,1 +1,60 @@
+2021.10.08，10.09  by wyx
+三大特性：层叠性、继承性、优先级
+层叠性：样式冲突时，就近原则，采用最近的样式。
+继承性：子代标签会继承父标签的样式（text-,font-,line-等都可以继承）
+优先级：同一个元素选择多个选择器，选择器相同则执行层叠性；选择器不同，则看权重。继承的权重为0，先执行指定样式。
+元素选择器<类选择器<ID选择器<行内样式表<后加！important
+存在权重叠加的问题，但不会进位。
+
+2021.10.09  by WYX
+页面布局过程。
+1.准备好网页的页面元素，主要时盒子Box
+2.利用CSS设置好盒子样式，并放到相应位置
+3.往盒子里放东西。
+盒子模型:边框，内边距，外边距，实际内容
+padding 内边距（盒子内的内容与边框之间的距离）
+margin 外边距（盒子之间的距离）
+border 边框 
+content 内容
+
+1.border边框，
+border:
+border-width：px
+border-style:solid(实线边框)；dashed(虚线边框);dotted(点边框)
+border-color：边框颜色
+复合写法：没有顺序要求
+border:px solid color
+上下左右边框可以分开写：
+border-top;border-bottom;border-left;border-right
+eg:200*200边框，上为红色，下左右蓝色
+div {
+    width:200px;
+    height:200px;
+    border:1px solid blue；
+    border-top-color:red;
+}
+boder-collapse 合并边框
+2.内边距
+padding-top/bottom/left/right
+内边距复合属性简写
+padding：5px；上下左右都5像素
+padding: 5px 10px； 上下5，左右10
+padding: 5px 10px 20px;上5 左右10 下20
+padding: 5px 10px 20px 30px;上5 右10 下20 左30顺时针旋转
+盒子大小会随着内边距而变大，要规定大小，width应该改为-内边距*2
+若未设定盒子宽度，则padding不会撑大盒子。
+3.外边距margin
+margin-top/bottom/left/right
+简写方式与padding一致，从上开始顺时针走。
+上下左右，上/左右/下，上/右/下/左。
+外边距使盒子在页面中水平居中。左右外边距auto即可
+margin:0 auto。
+解决嵌套块塌陷问题，对父元素添加overflow:hidden
+
+清除内外边距:
+ *{
+     margin:0;
+     padding:0;
+ }
+ 用在CSS开头
 
