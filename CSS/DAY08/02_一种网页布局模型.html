@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总-块-块-块-总网页布局</title>
+    <!-- time 2021.10.10  by WYX -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 50px;
+            background-color: gray;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        /* li去掉小点 */
+        li {
+            list-style: none;
+        }
+
+        .banner {
+            height: 150px;
+            width: 980px;
+            margin: 10px auto;
+            background-color: gray;
+        }
+
+        .box {
+            height: 300px;
+            width: 980px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        .box li {
+            float: left;
+            margin-right: 10px;
+            background-color: gray;
+            width: 237px;
+            height: 300px;
+        }
+
+        .box .last {
+            margin-right: 0;
+        }
+        .footer{
+          
+            height: 150px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner"></div>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="last">4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
