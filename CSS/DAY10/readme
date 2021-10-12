@@ -1,1 +1,96 @@
+ 2021.10.12    by WYX
+ 元素显示与隐藏，页面上的广告。
+ 1.display  
+ display:none隐藏元素
+ display:block显示元素/转为块元素
+ display隐藏了以后，不再占用原来的位置。
+
+ 2.visibility
+ visibility:inherit 继承父元素的可见性
+ visible 可见
+ hidden:隐藏
+
+3.overflow 对溢出元素进行隐藏
+如一个文本框中字数超出文本框范围,默认显示出来，改hidden可以隐藏
+overflow:visible
+overflow:hidden
+overflow:auto 超出时添加滚动条，不超出不添加滚动条
+overflow:scroll滚动条，不溢出也显示滚动条
+
+--------------------------------------------------------------
+CSS高级技巧
+★精灵图 CSSsprities
+减少服务器接收和发送请求的次数，提高页面加载速度。
+将小图片放到大图片当中。
+核心：针对背景图片，把多个背景图片整合到一个大图片中
+background-position。
+移动大图片的坐标，显示到目标小图片的位置，精确测量
+ 
+★字体图标 iconfont
+看着是图标，本质是字体，可以放大缩小改颜色
+提升优化小图片部分。
+iconfont icomoon
+字体文件，放到根目录中，CSS引入到页面中
+
+★CSS三角做法 
+一个宽度和高度都为0的盒子，给border-top:10px solid red
+.box {
+    border-top:10px solid pink  
+    border-right:10px solid pink 
+    border-bottom:10px solid pink 
+    border-left:10px solid pink 
+}
+top:上三角 bottom:正三角 right:箭头靠左的三角 left:箭头靠右的三角，其余改为透明色。
+如需要箭头靠右的三角形
+.box{
+    width: 0;
+    height: 0;
+    broder: 50px solid transparent;
+    broder-left-color: pink
+    margin:100px auto;
+}
+直角三角形状，右边为直角
+.box{
+    width:0;
+    height:0;
+    border-color:transparent red transparent transparent;
+    border-width:20px 10px 0 0;
+}
+
+★用户界面样式
+1.鼠标样式 cursor(光标)
+cursor:default默认/pointer小手/move移动/text文本/not-allowed禁止
+
+轮廓线，outline
+outline:0/none
+input{
+    outline:none/0
+}
+文本域textarea防止拖曳
+textarea{
+    resize:none.
+}
+
+★vertical-align属性的应用   
+图片，文字和表单的垂直对齐，对行内元素和行内块元素有效。
+vertical-align:bottom 底线对齐/middle 中线对齐，居中/top 顶端对齐
+
+溢出字省略号显示。
+1.单行文本溢出
+基本思路为：强制一行显示以后，overflow：hidden溢出隐藏,溢出省略号显示，text-overflow
+white-space:normal自动换行/nowrap强制一行显示,溢出省略+省略号表示
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis
+2.多行文本溢出webkit内核（移动端）
+
+布局技巧
+1.margin的负值，-1将两个边框重叠
+2.选择全部边框，则没有定位，hover{position：relative}
+
+
+
+
+
+
 
